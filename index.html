@@ -1,8 +1,132 @@
-<html>
-  <head>
-    <title>My Doc</title>
-  </head>
-  <body>
-    <h1>Hello</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comparison of Different Database Technologies</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1679ad;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #cbf2ff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1, h2, h3 {
+    color: #333;
+  }
+  p {
+    color: #666;
+  }
+  .accordion {
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-bottom: 1px solid #ddd;
+  }
+  .active, .accordion:hover {
+    background-color: #1679ad;
+  }
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+  }
+  #Heading {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div id="Heading">Research on Server-side and Database Technologies for PhotoEditz</div><br><br>
+  <h1>Comparison of Different Database Technologies</h1>
+  
+  <p>In the world of photo editing applications, choosing the right database technology is crucial. Whether you're considering traditional options like relational databases or newer choices like NoSQL or NewSQL, each has its own strengths and weaknesses. By comparing factors like how they store data, handle scalability, maintain consistency, and fit different editing needs, you can find the best fit for your photo app. This comparison helps ensure your app runs smoothly, handles large volumes of photos, and provides the best editing experience for users.</p>
+  
+  <h2>Modern Database Technologies:</h2>
+  <button class="accordion">MySQL</button>
+  <div class="panel">
+    <p>MySQL database is Relational database management system. MySQL use SQL to create, modify, and extract data from the relational database. By normalizing data in the rows and columns of the tables.</p>
+    <ul>
+        <li>Easy To Use: MySQL is very easy to use database which given very flexibility and independence to the programmer to do desire things.</li>
+        <li>Secure: MySQL is the most secure database management system in the world. The recent version of MySQL offers data security and transactional processing support that can significantly benefit any business, especially e-commerce businesses that carry out frequent monetary transactions.</li>
+        <li>High Performance: MySQL is created to meet the increasing demands of almost every application and to ensure full-text indexes, optimum speed, and distinct caches for improved performance.</li>
+        <li>Lower Cost of Ownership: When enterprises migrate from current database applications to MySQL, they save a great deal on total cost of ownership. They can also save money on new projects.</li>
+    </ul>
+  </div>
+  
+  <button class="accordion">Oracle</button>
+  <div class="panel">
+    <p>Oracle is a relational database management system that ensures the integrity of data stored and used. The solution stores, organizes, and retrieves data by type while maintaining relationships between various data types.</p>
+    <ul>
+        <li>Database Performance: Oracle DBMS is its high availability and performance. You can increase operations and query execution time with Oracle’s performance optimization features, making it easier to retrieve the data you need.</li>
+        <li>Hybrid Cloud Environment: Each Oracle database exists in a secure hybrid Cloud Environment. That helps you reduce IT costs and use more data deployment options than other platforms.</li>
+        <li>Backup and Recovery: It’s easy to recover data with an Oracle database, thanks to Oracle’s RMAN (Recovery Manager). You can even restore files during unexpected downtime and power outages. </li>
+        <li>Scalability: You can scale your Oracle DB up or down depending on your data management requirements.</li>
+    </ul>
+  </div>
+  
+  <button class="accordion">MongoDB</button>
+  <div class="panel">
+    <p>MongoDB is non-relational database system. MongoDB is used for high-volume data storage, helping organizations store large amounts of data while still performing rapidly. MongoDB is a tool that can manage document-oriented information, store or retrieve information. </p>
+    <ul>
+        <li>Simplicity: MongoDB offers a simple query syntax that is much easier to grasp than SQL. It provides an expressive query language that users find helpful during development. </li>
+        <li>Flexibility: MongoDB has a dynamic schematic architecture that works with non-structured data and storage. Businesses keep evolving and so do the data they maintain. It is important to have a flexible database model that could adapt to these changes. </li>
+        <li>Load balancing: MongoDB handles load balancing without the need for a separate, dedicated load balancer, through either vertical or horizontal scaling. </li>
+        <li>Replication: A replica set is two or more MongoDB instances used to provide high availability. Replica sets are made of primary and secondary servers. The primary MongoDB server performs all the read and write operations, while the secondary replica keeps a copy of the data. </li>
+    </ul>
+  </div>
+  
+  <button class="accordion">MongoDB</button>
+  <div class="panel">
+    <p>MongoDB is non-relational database system. MongoDB is used for high-volume data storage, helping organizations store large amounts of data while still performing rapidly. MongoDB is a tool that can manage document-oriented information, store or retrieve information. </p>
+    <ul>
+        <li>Simplicity: MongoDB offers a simple query syntax that is much easier to grasp than SQL. It provides an expressive query language that users find helpful during development. </li>
+        <li>Flexibility: MongoDB has a dynamic schematic architecture that works with non-structured data and storage. Businesses keep evolving and so do the data they maintain. It is important to have a flexible database model that could adapt to these changes. </li>
+        <li>Load balancing: MongoDB handles load balancing without the need for a separate, dedicated load balancer, through either vertical or horizontal scaling. </li>
+        <li>Replication: A replica set is two or more MongoDB instances used to provide high availability. Replica sets are made of primary and secondary servers. The primary MongoDB server performs all the read and write operations, while the secondary replica keeps a copy of the data. </li>
+    </ul>
+  </div>
+
+
+</div>
+
+<script>
+  var accordions = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < accordions.length; i++) {
+    accordions[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+</script>
+
+</body>
 </html>
