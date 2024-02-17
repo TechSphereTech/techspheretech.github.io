@@ -97,17 +97,88 @@
     </ul>
   </div>
   
-  <button class="accordion">MongoDB</button>
+  <button class="accordion">SQLite</button>
   <div class="panel">
-    <p>MongoDB is non-relational database system. MongoDB is used for high-volume data storage, helping organizations store large amounts of data while still performing rapidly. MongoDB is a tool that can manage document-oriented information, store or retrieve information. </p>
+    <p>SQLite is an embedded, server-less relational database management system. It is an in-memory open-source library with zero configuration and does not require any installation. Also, it is very convenient as it's less than 500kb in size, which is significantly lesser than other database management systems. </p>
     <ul>
-        <li>Simplicity: MongoDB offers a simple query syntax that is much easier to grasp than SQL. It provides an expressive query language that users find helpful during development. </li>
-        <li>Flexibility: MongoDB has a dynamic schematic architecture that works with non-structured data and storage. Businesses keep evolving and so do the data they maintain. It is important to have a flexible database model that could adapt to these changes. </li>
-        <li>Load balancing: MongoDB handles load balancing without the need for a separate, dedicated load balancer, through either vertical or horizontal scaling. </li>
-        <li>Replication: A replica set is two or more MongoDB instances used to provide high availability. Replica sets are made of primary and secondary servers. The primary MongoDB server performs all the read and write operations, while the secondary replica keeps a copy of the data. </li>
+        <li>Lightweight: SQLite is a very light weighted database so, it is easy to use it as an embedded software with devices like televisions, Mobile phones, cameras, home electronic devices, etc. </li>
+        <li>No Installation Needed: SQLite is very easy to learn. You don’t need to install and configure it. Just download SQLite libraries in your computer and it is ready for creating the database. </li>
+        <li>Better Performance: Reading and writing operations are very fast for SQLite database. It is almost 35% faster than File system. It only loads the data which is needed, rather than reading the entire file and hold it in memory. If you edit small parts, it only overwrites the parts of the file which was changed. </li>
+        <li>Frequent Updates and Active Maintenance: Reviewers have mentioned that SQLite is frequently updated, indicating that it is actively maintained and improved. This continuous improvement ensures that the database remains up to date with the latest features and enhancements, providing a reliable solution for developers. </li>
     </ul>
   </div>
 
+  <button class="accordion">PostgreSQL</button>
+  <div class="panel">
+    <p>PostgreSQL is a relational database. It stores data points in rows, with columns as different data attributes. A table stores multiple related rows. The relational database is the most common type of database in use. It differentiates itself with a focus on integrations and extensibility. It works with a lot of other technologies and conforms to various database standards, that ensures it is extensible. </p>
+    <ul>
+        <li>Security: There are many features for enhanced security, thanks to easy extensibility: however, if you make use of the right ones (TDE, Data Masking) you get a very secure database, which takes care of your most asset – your data. </li>
+        <li>Scalability: Your PostgreSQL database can grow with you. There are multiple technical options for operating PostgreSQL at scale. That’s why your PostgreSQL database can grow with you and can be as large as you need it to go.</li>
+        <li>Better Performance: Reading and writing operations are very fast for SQLite database. It is almost 35% faster than File system. It only loads the data which is needed, rather than reading the entire file and hold it in memory. If you edit small parts, it only overwrites the parts of the file which was changed. </li>
+        <li>Reliability: Multiple companies and individuals contribute to the project and have driven innovation for more than 25 years now. The strong community ensures that bugs are fixed without delay. PG is supported by a wide array of extensions plus multiple SQL and NoSQL data models. </li>
+    </ul>
+  </div>
+  <br><br>
+
+  <h2>Most Suitable Database</h2>
+  <p>Above we mention modern and useful technologies which we can implement in our project for smooth operations and user experience. We have closely analyzed our requirements and we decide to implement Firebase for our project. Here are the reasons why we are choosing Firebase as our cloud storage which assure security of application and provide all the functions and support, we need for smooth operation.  </p>
+  <h3>Firebase Features of the Application</h3>
+
+  <button class="accordion">1. Authentication</button>
+  <div class="panel">
+    <p>Firebase Authentication is a feature provided by Google's Firebase platform that allows developers to easily add user authentication to their web and mobile applications. It provides a secure and reliable way to authenticate users using email and password, phone numbers, social media logins, and more. </p>
+  </div>
+  <button class="accordion">2. Real-time Synchronization</button>
+  <div class="panel">
+    <p>Firebase Realtime Database will give us freedom to create apps where data is synced across devices and servers in real-time. This means changes made on one device are instantly reflected on all other connected devices, providing a seamless and responsive user experience. </p>
+  </div>
+  <button class="accordion">3. Storage</button>
+  <div class="panel">
+    <p>Firebase Storage is a tool that will help developers store and manage files like images in the cloud. It's secure, reliable, and can handle lots of data. With Firebase Storage, developers can easily store, retrieve, and share files for their apps, making it simple to build apps that need to handle lots of user-generated content. </p>
+  </div>
+  <button class="accordion">4. Integration with other Firebase services</button>
+  <div class="panel">
+    <p>With the help of this feature, Developers can integrate Firebase with other services that can utilize our business apps such as Big Query, Firebase Notifications, Firebase Remote Configuration, Firebase CrashReporting, and Google Tag Manager.</p>
+  </div>
+
+  <br><br>
+  <h1>Server-side Technologies</h1><br>
+
+  <button class="accordion">ExpressJS</button>
+  <div class="panel">
+    <p>Express.js is the most popular web framework for Node.js. It is designed for building web applications and APIs and has been called the de facto standard server framework for Node.js.</p>
+    <h3>Features of ExpressJS</h3>
+    <ul>
+        <li>Routing: - In Node JS, we have a module called http to create a server, where we create a server using http.createServer and pass a callback function to http.createServer, where we get requests and responses as s parameter and using if else and URL, we setup routes. </li>
+        <li>Middlewares: - Node JS does not contain any middleware by default, but we can create our own custom middleware in it. Instead of Node JS, Express.js contains built-in middleware like express.static() to server static files to clients. </li>
+        <li>Error Handling: - Express JS, it is much easier to handle errors because there are multiple ways to handle errors, like asynchronous handling, global error handling, etc. </li>
+        <li>Request & Response Object: - Request and Response means what is requested by the client side and, in exchange for that request, what data is sent to the client side from the server side in terms of response. The request and response object is contained in both Node JS and Express JS, but still, Express JS comes with multiple additional functionalities in this object. </li>
+    </ul>
+  </div>
+
+  <button class="accordion">Ruby on Rails</button>
+  <div class="panel">
+    <p>Ruby on Rails (RoR) is open-source full-stack framework software specifically to build different web applications. Ruby on Rails has two parts:Ruby-  The general-purpose programming language that’s super versatile.Rails – Frameworks for creating websites, apps, and systems. It’s almost like an entirely user-friendly default structure, making it convenient to build anything.</p>
+    <h3>Features of Ruby on Rails</h3>
+    <ul>
+        <li>Secure: Ruby on Rails framework has default settings for all the necessary security features. While you use Ruby on Rails, you’ll be following a secure development process without even knowing it. </li>
+        <li>Flexible: The flexibility of Ruby on Rails simplifies the frontend and backend, making the creation of web applications more accessible. Typically, a web application might need to use Rails on the backend, but it can easily use another programming language on the frontend. These capabilities give developers the freedom to harness Ruby on Rails based on what suits their needs, seamlessly blending different coding languages.</li>
+        <li>Scalable: Ruby on Rails is super scalable; developers can run the same code on different platforms. The scalability of Ruby on Rails gives applications or websites the power to handle more web traffic while operating perfectly, ideal for social media networks or streaming services.</li>
+        <li>Cost-Effective: Ruby on Rails uses an open-source framework and is free to use for anyone, also, from a developer’s standpoint, it’s super easy to use. Plus, with so many gems available for add-on features, it’s perfect for saving time while tailoring your website or application. </li>
+    </ul>
+  </div>
+
+  <button class="accordion">ASP.NET</button>
+  <div class="panel">
+    <p>ASP.NET is a framework that many web developers use to build modern web applications, services and hubs that allow connected clients to access new content in real time. This framework works alongside the hypertext transfer protocol (HTTP), the standard protocol used for all web applications. </p>
+    <h3>Features of ASP.NET</h3>
+    <ul>
+        <li>Asynchronous via Async/Await: Asynchronous programming patterns is now implemented in all .net frameworks classes and 3rd party libraries. You know why asp.net is faster, because of its wide use of asynchronous patterns in kestrel frameworks. However, most of the applications spend their lots of time waiting for database queries, web services call and its input-output operations to complete. </li>
+        <li>Globalization and Localization: We host the web application, and it can be accessed from anywhere globally. So, language, date and time format, number format, the currency must be different for different regions or countries. ASP.NET supports globalization so that different countries’ clients or people also can understand, and they can access this application. ASP.NET customize our application for different languages with the help of resource files. These files act as a central repository where all the texts are placed.</li>
+        <li>Security: As it supports the .net framework so it will provide security for our application. Applications have its individual identity, so before running this .net will check its identity of those objects. It will also check the operating system security. Due to its pre-application configuration and feature of built-in windows authentication, our developed application is safe and secure. With built-in Windows authentication and per-application configuration, your applications are safe and secured. </li>
+        <li>Cross-Platform and Container Support: As we say it supports cross-platform means it supports Windows, macOS, and Linux. So, if we create ASP.NET application then we can directly deploy it on these platforms. </li>
+    </ul>
+  </div>
 
 </div>
 
